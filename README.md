@@ -74,6 +74,7 @@ contact-manager/
 │   ├── routes/
 │   ├── server.js
 │
+<img width="357" height="504" alt="image" src="https://github.com/user-attachments/assets/7758714e-e406-4037-9176-5e16e87d1a63" />
 
 
 
