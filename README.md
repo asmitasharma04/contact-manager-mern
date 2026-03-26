@@ -1,77 +1,66 @@
-# Contact Manager (MERN Stack)
+# 📇 Contact Manager (MERN Stack)
 
-A full-stack **Contact Management Web Application** built using the MERN stack (MongoDB, Express, React, Node.js) as part of a technical evaluation.
+A full-stack **Contact Management Web Application** built using the MERN stack (MongoDB, Express, React, Node.js).
 
-This project demonstrates strong fundamentals of full-stack development, including CRUD operations, API integration, validation, and clean UI/UX design.
+This project demonstrates strong fundamentals of full-stack development including CRUD operations, API integration, validation, and a clean user interface.
 
----
 
-##  Live Demo
+## 🚀 Live Demo
 
-🔗 **Deployed Application:**
-(Add your Vercel link here)
+🌐 Frontend: https://contact-manager-mernbased.vercel.app  
+🔗 Backend API: https://contact-manager-mernbased.onrender.com  
 
 ---
 
 ## 💻 GitHub Repository
 
-🔗 **Repository Link:**
-(Add your GitHub repo link here)
+🔗 https://github.com/asmitasharma04/contact-manager-mern  
 
----
 
 ## ✨ Features
 
-* ➕ Add new contacts
-* 📋 View all contacts
-* ✏️ Edit existing contacts
-* ❌ Delete contacts (with confirmation)
-* 🔍 Search contacts by name, email, or phone
-* ✅ Form validation (name, email, phone)
-* 🚫 Duplicate contact prevention
-* 🔔 Success & error messages
-* 📱 Responsive and modern UI
+- ➕ Add new contacts  
+- 📋 View all contacts  
+- ✏️ Edit existing contacts  
+- ❌ Delete contacts (with confirmation)  
+- 🔍 Search contacts by name, email, or phone  
+- ✅ Form validation (name, email, phone)  
+- 🚫 Duplicate contact prevention  
+- 🔔 Success & error notifications  
+- 📱 Responsive and modern UI  
 
----
 
 ## 🧠 Key Highlights
 
-* Clean and modular **code structure**
-* Proper **REST API design**
-* Efficient **state management using React hooks**
-* **Real-time UI updates** after CRUD operations
-* **User-friendly experience** with validations and feedback messages
-* Designed with a focus on **functionality, scalability, and usability**
+- Clean and modular **code structure**  
+- Proper **REST API design**  
+- Efficient **state management using React Hooks**  
+- Real-time UI updates after CRUD operations  
+- Strong focus on **user experience and validation**  
 
----
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* React.js
-* Axios
-* CSS (Custom Styling)
+- React.js  
+- Axios  
+- CSS (Custom Styling)  
 
 ### Backend
-
-* Node.js
-* Express.js
+- Node.js  
+- Express.js  
 
 ### Database
-
-* MongoDB Atlas
+- MongoDB Atlas  
 
 ### Deployment
+- Frontend: Vercel  
+- Backend: Render  
 
-* Frontend: Vercel
-* Backend: Railway
 
----
 
 ## 📂 Project Structure
 
-```
 contact-manager/
 │
 ├── frontend/
@@ -85,48 +74,34 @@ contact-manager/
 │   ├── routes/
 │   ├── server.js
 │
-└── README.md
-```
 
----
+
 
 ## ⚙️ Setup Instructions (Local)
 
 ### 1. Clone the repository
 
-```bash
-git clone <your-repo-link>
-cd contact-manager
-```
+git clone https://github.com/asmitasharma04/contact-manager-mern.git
+cd contact-manager-mern
 
----
 
 ### 2. Backend Setup
 
-```bash
 cd backend
 npm install
-npm run dev
-```
+node server.js
+
 
 Create a `.env` file in `backend/` and add:
 
-```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-```
 
----
-
-### 3. Frontend Setup
-
-```bash
+### 3. Frontend Setup bash
 cd frontend
 npm install
 npm start
-```
 
----
 
 ## 🔗 API Endpoints
 
@@ -135,7 +110,6 @@ npm start
 * `PUT /api/contacts/:id` → Update contact
 * `DELETE /api/contacts/:id` → Delete contact
 
----
 
 ## 🎯 Objective
 
@@ -146,23 +120,18 @@ This project was built to demonstrate:
 * Writing **clean, structured, and maintainable code**
 * Implementing **real-world features like validation and search**
 
----
-
 ## 📌 Future Improvements (Optional)
 
 * Authentication (Login/Register)
 * Pagination for large contact lists
 * Cloud image/avatar support
 
----
 
 ## 👩‍💻 Author
 
 **Asmita Sharma**
 Computer Science Undergraduate
 Punjab, India
-
----
 
 ## ⭐ Conclusion
 
