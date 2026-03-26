@@ -1,10 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
-import axios from "axios";
+import API from "./services/api";
 import ContactForm from "./components/ContactForm";
 import ContactList from "./components/ContactList";
 import "./index.css";
-
-const API_URL = "http://localhost:5000/api/contacts";
 
 function App() {
   const [contacts, setContacts] = useState([]);
@@ -28,7 +26,7 @@ function App() {
   const fetchContacts = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(API_URL);
+      const res = await API.get("/contacts");
       setContacts(res.data);
     } catch (error) {
       showMessage("error", "Failed to fetch contacts");
@@ -105,7 +103,7 @@ function App() {
 
     try {
       if (editId) {
-        await axios.put(`${API_URL}/${editId}`, {
+        await API.put(`/contacts/${editId}`, {
           name: formData.name.trim(),
           email: formData.email.trim(),
           phone: formData.phone.trim(),
@@ -113,7 +111,7 @@ function App() {
         showMessage("success", "Contact updated successfully");
         setEditId(null);
       } else {
-        await axios.post(API_URL, {
+        await API.post("/contacts", {
           name: formData.name.trim(),
           email: formData.email.trim(),
           phone: formData.phone.trim(),
@@ -145,7 +143,7 @@ function App() {
     if (!confirmed) return;
 
     try {
-      await axios.delete(`${API_URL}/${id}`);
+      await API.delete(`/contacts/${id}`);
       showMessage("success", "Contact deleted successfully");
 
       if (editId === id) {
