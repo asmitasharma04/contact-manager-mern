@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import API from "./services/api";
 import ContactForm from "./components/ContactForm";
 import ContactList from "./components/ContactList";
@@ -23,21 +23,21 @@ function App() {
     }, 2500);
   };
 
-  const fetchContacts = async () => {
-    try {
-      setLoading(true);
-      const res = await API.get("/contacts");
-      setContacts(res.data);
-    } catch (error) {
-      showMessage("error", "Failed to fetch contacts");
-    } finally {
-      setLoading(false);
-    }
-  };
+  const fetchContacts = useCallback(async () => {
+  try {
+    setLoading(true);
+    const res = await API.get("/contacts");
+    setContacts(res.data);
+  } catch (error) {
+    showMessage("error", "Failed to fetch contacts");
+  } finally {
+    setLoading(false);
+  }
+}, []);
 
   useEffect(() => {
-    fetchContacts();
-  }, []);
+  fetchContacts();
+}, [fetchContacts]);
 
   const handleChange = (e) => {
     let value = e.target.value;
