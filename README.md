@@ -27,7 +27,11 @@ This project demonstrates strong fundamentals of full-stack development includin
 - ✅ Form validation (name, email, phone)  
 - 🚫 Duplicate contact prevention  
 - 🔔 Success & error notifications  
-- 📱 Responsive and modern UI  
+- 📱 Responsive and modern UI
+
+## 📸 Screenshots
+
+<img width="1105" height="800" alt="image" src="https://github.com/user-attachments/assets/b0e3eb89-7962-41a5-ab7d-0d89b13ca4e4" />
 
 
 ## 🧠 Key Highlights
@@ -61,19 +65,6 @@ This project demonstrates strong fundamentals of full-stack development includin
 
 ## 📂 Project Structure
 
-contact-manager/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── App.js
-│   │   └── index.css
-│
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│
 <img width="357" height="504" alt="image" src="https://github.com/user-attachments/assets/7758714e-e406-4037-9176-5e16e87d1a63" />
 
 
@@ -137,3 +128,4 @@ Punjab, India
 ## ⭐ Conclusion
 
 This project reflects a strong foundation in full-stack development with a focus on functionality, usability, and clean architecture.
+
